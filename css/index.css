@@ -140,7 +140,7 @@ a:hover {
   }
 
   .about-img {
-    background-image: url(../images/about-mobile.svg);
+    background-image: url(../images/home.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -232,7 +232,7 @@ a:hover {
   }
 
   .services-img {
-    background-image: url('../images/servicescover1.svg'),
+    background-image: url('../images/yoga\(home\).jpeg'),
       url('../images/servicescover2.svg');
     background-position: 100% 12%, 60% 0.1%;
     background-size: 210px, 200px;
@@ -1120,7 +1120,7 @@ a:hover {
   }
 
   .services-img {
-    background-image: url('../images/servicescover1.svg'),
+    background-image: url('../images/yoga\(home\).jpeg'),
       url('../images/servicescover2.svg');
     background-position: 70% 50%, 60% 10%;
     background-size: 350px, 350px;
