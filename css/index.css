@@ -391,7 +391,7 @@ a:hover {
   .gal-class {
     position: absolute;
     z-index: 2;
-    top: 90%;
+    /* top: %; */
     left: 10%;
     padding-left: 20px;
     font: 18px/34px Montserrat;
