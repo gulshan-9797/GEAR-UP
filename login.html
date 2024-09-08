@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/free-photo/3d-dark-grunge-display-background-with-smoky-atmosphere_1048-16218.jpg?w=900&t=st=1725741271~exp=1725741871~hmac=37be3363e6d4b45a72c4dfaa01050a69b6194525ed6149f94dad0b21e165a332");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .glass{
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border:1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            padding: 50px;
+            overflow: hidden;
+            top: auto;
+            left:auto;
+
+        }
+        .login-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("Toji Fushiguro Black PC Wallpaper.jpg") no-repeat center center;
+            background-size: cover;
+            filter: blur(8px);
+            z-index: -1;
+            opacity: 0.5; /* Adjust opacity for desired blur effect */
+        }
+        h2 {
+            font-style: italic;
+            text-align: center;
+            margin: 0 0 20px;
+        }
+        .input-container {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .input-container i {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #666;
+        }
+        .input-container input {
+            width:100%;
+            padding: 10px 10px 10px 40px; /* Padding left to make space for the icon */
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }        button:hover {
+            background-color: #000000;
+        }
+        @media (max-width: 2000px) {
+            .login-container {
+                width: 95%;
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            .input-container input {
+                font-size: 0.9rem;
+            }
+
+            button {
+                font-size: 0.9rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .login-container {
+                width: 100%;
+                padding: 10px;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            .input-container input {
+                font-size: 0.85rem;
+            }
+
+            button {
+                font-size: 0.85rem;
+            }
+        }
+        #pp{
+            filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="glass"><h2>LOGIN</h2>
+            <form id="loginForm">
+                <div class="input-container">
+                    <i class='bx bx-user'></i>
+                    <input type="email" id="email" placeholder="Username" required>
+                </div>
+                <div class="input-container">
+                    <i class='bx bxs-lock'></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
